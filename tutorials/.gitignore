@@ -4,3 +4,5 @@ hardware.bit
 hardware.config
 hardware.json
 hardware.out
+*.out
+*.vcd
