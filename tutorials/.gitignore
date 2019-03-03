@@ -1,0 +1,6 @@
+.vscode
+*.dblite
+hardware.bit
+hardware.config
+hardware.json
+hardware.out
