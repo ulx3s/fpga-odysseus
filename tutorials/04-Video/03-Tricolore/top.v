@@ -36,6 +36,6 @@ module top (
     );
     // Color encoding
     // RRR GGG BB 
-    assign color = x[3] ^ y[3] ? 8'hff : 8'h00;
+    assign color = (x<32) ? 8'h02 : (x<64) ? 8'hff : 8'he0;
 
 endmodule

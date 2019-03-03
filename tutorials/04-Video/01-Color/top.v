@@ -8,14 +8,15 @@ module top (
     output wire oled_mosi,
     output wire oled_dc,
     output wire oled_resn,
-    output wifi_gpio0,    
+    output wifi_gpio0
 );
     assign wifi_gpio0 = 1'b1;
 
     wire clk;
     pll pll(
         .clki(clk_25mhz),
-        .clko(clk)
+        .clko(clk),
+        .locked()
     );
 
     wire [7:0] x;

@@ -34,8 +34,28 @@ module top (
         .y(y),
         .color(color)
     );
-    // Color encoding
-    // RRR GGG BB 
-    assign color = x[3] ^ y[3] ? 8'hff : 8'h00;
+
+    reg [7:0] mem [0:47];
+
+    integer k;
+
+    initial
+    begin
+      for (k = 0; k < 48; k = k + 1)
+        mem[k] <= 32;
+      mem[0] <= 8'd65;
+      mem[1] <= 8'd66;
+      mem[2] <= 8'd67;
+    end
+
+    wire [7:0] data_out;
+
+    font_rom vga_font(
+        .clk(clk),
+        .addr({ mem[(y >> 4) * 12 + (x>>3)], y[3:0] }),
+        .data_out(data_out)
+    );
+
+    assign color = data_out[7-x[2:0]+1] ? 8'hff : 8'h00; // +1 for sync
 
 endmodule
