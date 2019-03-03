@@ -1,0 +1,8 @@
+*.elf
+*.hex
+*.bin
+*.json
+*_out.config
+*.bit
+*.vvp
+*.vcd
