@@ -54,14 +54,16 @@ TBD
 To be able to test environment and to have starting point for workshop you also need to download this repository.
 
 ```console
+cd ~
 git clone https://github.com/mmicko/fpga-odysseus
 ```
 
 # Testing
 
-For Linux and macOS always make sure you have tools setup and initialized first.
+For Linux always make sure you have tools setup and initialized first.
 
 ```console
+cd ~/fpga_tools
 source fpga.sh
 ```
 
@@ -71,7 +73,7 @@ To test if all is setup correctly.
 
 ```console
 
-cd tests/led
+cd ~/fpga_tools/tests/led
 
 apio build
 
@@ -91,7 +93,7 @@ ecppack --db /home/xxx/fpga_tools/apio_data/packages/toolchain-ecp5/share/trelli
 ## Testing Risc-V compiler
 
 ```console
-cd tests/riscv
+cd ~/fpga_tools/tests/riscv
 make
 ```
 response should be
