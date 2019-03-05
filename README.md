@@ -45,6 +45,11 @@ cd apio
 sudo pip install -e .
 ```
 
+We also need to add support for programming over FTDI, so just run:
+```console
+sudo apio drivers --ftdi-enable
+```
+
 # Windows Install
 
 TBD
