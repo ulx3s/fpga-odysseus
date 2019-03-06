@@ -65,11 +65,22 @@ Uze 7zip (can be downloaded from [here](https://www.7-zip.org/download.html)) to
 
 Move that folder to root of C drive (mandatory due to location being hardcoded in part of msys install)
 
-Go to c:\msys64  and click mingw64.exe to get console.
+Go to c:\msys64  and click ConEmu.exe to get console.
 
-Your profile will be generated and you will be greeted by prompt.
+Your profile will be generated and you will be greeted by next prompt.
 
-Now pull the workshop materials.
+```console
+[HACKADAY] C:\msys64\src>
+```
+
+If you do not already have installed you favorite terminal console for serial access, please install [PuTTY](https://www.putty.org/) or similar.
+You can even install it from command line by using:
+
+```console
+pacman -S mingw-w64-x86_64-putty
+```
+
+Now pull materials for workshop.
 
 ```console
 git clone https://github.com/mmicko/fpga-odysseus -c core.symlinks=true
@@ -80,6 +91,11 @@ cd fpga-odysseus
 git reset --hard
 ```
 Now you have all setup, not need for additional testing on Windows side.
+
+**NOTE** In case you are getting error starting git on Windows, first run msys but just leave it open at side, and try again in main window:
+```console
+c:\msys64\msys2.exe
+```
 
 # Testing
 
