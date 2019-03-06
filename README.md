@@ -69,6 +69,8 @@ Go to c:\msys64  and click mingw64.exe to get console.
 
 Your profile will be generated and you will be greeted by prompt.
 
+Now pull the workshop materials.
+
 ```console
 git clone https://github.com/mmicko/fpga-odysseus -c core.symlinks=true
 ```
