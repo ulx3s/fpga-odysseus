@@ -50,18 +50,34 @@ We also need to add support for programming over FTDI, so just run:
 sudo apio drivers --ftdi-enable
 ```
 
-# Windows Install
-
-TBD
-
-# Workshop materials
-
 To be able to test environment and to have starting point for workshop you also need to download this repository.
 
 ```console
 cd ~
 git clone https://github.com/mmicko/fpga-odysseus
 ```
+
+# Windows Install
+
+Download file from [this link](https://github.com/mmicko/fpga-odysseus/releases/download/v1.0/fpga-tools-windows-x64.7z) first.
+
+Uze 7zip (can be downloaded from [here](https://www.7-zip.org/download.html)) to unpack file (using right click -> 7-Zip -> Extract here )
+
+Move that folder to root of C drive (mandatory due to location being hardcoded in part of msys install)
+
+Go to c:\msys64  and click mingw64.exe to get console.
+
+Your profile will be generated and you will be greeted by prompt.
+
+```console
+git clone https://github.com/mmicko/fpga-odysseus -c core.symlinks=true
+```
+You will get some errors here, due to issues with specific git version on windows, but do not worry, just execute :
+```console
+cd fpga-odysseus 
+git reset --hard
+```
+Now you have all setup, not need for additional testing on Windows side.
 
 # Testing
 
