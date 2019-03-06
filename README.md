@@ -42,7 +42,7 @@ source fpga.sh
 
 cd apio
 
-sudo pip install -e .
+sudo pip3 install -e .
 ```
 
 We also need to add support for programming over FTDI, so just run:
