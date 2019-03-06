@@ -70,7 +70,7 @@ Go to c:\msys64  and click ConEmu.exe to get console.
 Your profile will be generated and you will be greeted by next prompt.
 
 ```console
-[HACKADAY] C:\msys64\src>
+[FPGA] C:\msys64\src>
 ```
 
 If you do not already have installed you favorite terminal console for serial access, please install [PuTTY](https://www.putty.org/) or similar.
