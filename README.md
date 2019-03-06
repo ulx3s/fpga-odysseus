@@ -97,7 +97,7 @@ Now you have all setup, not need for additional testing on Windows side.
 c:\msys64\msys2.exe
 ```
 
-# Testing
+# Testing (needed for Linux only)
 
 For Linux always make sure you have tools setup and initialized first.
 
