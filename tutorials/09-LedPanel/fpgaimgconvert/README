@@ -1,0 +1,40 @@
+```
+cnv.py is small Python script for converting JPG and PNG images to low resolution
+sprites. Usually used to generate images for small 64x64 LED displays connected to
+FPGA boards such as ULX3S (https://radiona.org/ulx3s).
+
+Written by Igor Brkic, original source at https://bitbucket.org/igor_b/fpgaimgconvert/
+
+Started as a part of https://github.com/goran-mahovlic/prjtrellis-led64x64
+repository.
+
+cnv.py requires PIL (Pillow) library.
+
+
+usage: cnv.py [-h] [-s SIZE] [-a] [-d] [-b DEBUG] [-c COLORS] [-g GAMMA]
+              [-n GAIN] [-o OUTPUT] [-p PALETTE]
+              input_image
+
+positional arguments:
+  input_image           Input image (jpg, png, gif)
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -s SIZE, --size SIZE  Output size WxH (default 64x64, if set to 'same' will
+                        take input image's size)
+  -a, --keep-aspect-ratio
+                        Keep aspect ratio when resizing
+  -d, --dither          Enable dithering (default false)
+  -b DEBUG, --debug DEBUG
+                        save output to provided image file
+  -c COLORS, --colors COLORS
+                        Number of colors in palette (default 16)
+  -g GAMMA, --gamma GAMMA
+                        gamma correction
+  -n GAIN, --gain GAIN  gain
+  -o OUTPUT, --output OUTPUT
+                        Output file name (default output.mem)
+  -p PALETTE, --palette PALETTE
+                        Save palette to file instead of printing to stdout
+
+```
