@@ -32,7 +32,7 @@ Download prepared package, and install APIO
 ```console
 cd ~
 
-wget https://github.com/mmicko/fpga-odysseus/releases/download/v1.0/fpga-tools-linux-x64.tar.gz
+wget https://github.com/ulx3s/fpga-odysseus/releases/download/v1.0/fpga-tools-linux-x64.tar.gz
 
 tar xvfz fpga-tools-linux-x64.tar.gz
 
@@ -54,12 +54,12 @@ To be able to test environment and to have starting point for workshop you also 
 
 ```console
 cd ~
-git clone https://github.com/mmicko/fpga-odysseus
+git clone https://github.com/ulx3s/fpga-odysseus
 ```
 
 # Windows Install
 
-Download file from [this link](https://github.com/mmicko/fpga-odysseus/releases/download/v1.0/fpga-tools-windows-x64.7z) first.
+Download file from [this link](https://github.com/ulx3s/fpga-odysseus/releases/download/v1.0/fpga-tools-windows-x64.7z) first.
 
 Uze 7zip (can be downloaded from [here](https://www.7-zip.org/download.html)) to unpack file (using right click -> 7-Zip -> Extract here )
 
@@ -83,7 +83,7 @@ pacman -S mingw-w64-x86_64-putty
 Now pull materials for workshop.
 
 ```console
-git clone https://github.com/mmicko/fpga-odysseus -c core.symlinks=true
+git clone https://github.com/ulx3s/fpga-odysseus -c core.symlinks=true
 ```
 You will get some errors here, due to issues with specific git version on windows, but do not worry, just execute :
 ```console
