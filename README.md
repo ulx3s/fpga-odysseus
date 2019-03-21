@@ -1,6 +1,9 @@
 # FPGA Odysseus with ULX3S - Workshop materials
 
-This repo contains all needed material for participation at FPGA Odysseus with ULX3S Workshop at Radiona event in Zagreb 9th of March 2019.
+This repo contains all needed material for participation at
+FPGA Odysseus with [ULX3S](http://radiona.org/ulx3s) 
+[Workshop at Radiona](http://radiona.org/first-fpga-odysseus-hackathon/)
+event in Zagreb 9th of March 2019.
 
 # For all environments
 
