@@ -115,7 +115,7 @@ To test if all is setup correctly.
 
 ```console
 
-cd ~/fpga_tools/tests/led
+cd ~/fpga_tools/test/led
 
 apio build
 
